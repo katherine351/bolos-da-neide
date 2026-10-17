@@ -6,220 +6,180 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #fff8f5;
-    color: #5a3b35;
+    background-color: #fff5f5;
+    color: #333;
 }
+
+/* CABEÇALHO */
 
 header {
-    background-color: #f8c8d8;
+    background-color: #e8a0a8;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+#logo img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+#container {
     text-align: center;
-    padding-bottom: 25px;
-    border-bottom: 4px solid #d889a3;
+    flex: 1;
 }
 
-header img {
-    width: 200px;
-    max-width: 100%;
-    margin: 20px auto 12px;
+#container h1 {
+    color: white;
+    font-size: 32px;
 }
 
-nav {
-    background-color: #ffffff;
-    padding: 16px;
-    text-align: center;
-    border-bottom: 2px solid #e5aabd;
+#menu ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
 }
 
-nav a {
-    color: #91445f;
+#menu a {
     text-decoration: none;
-    margin: 0 20px;
-    font-size: 17px;
+    color: white;
     font-weight: bold;
 }
 
-nav a:hover {
-    color: #d45f82;
+#menu a:hover {
+    color: #7a3038;
 }
 
-h1 {
-    color: #91445f;
-    font-size: 40px;
-    font-family: Georgia, serif;
-    margin-top: 10px;
+/* CONTEÚDO PRINCIPAL */
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 30px 20px;
 }
 
-h2 {
-    color: #b65372;
-    font-family: Georgia, serif;
-    font-size: 29px;
+/* INTRODUÇÃO */
+
+#introducao {
+    text-align: center;
+    padding: 30px 10px;
+}
+
+#introducao h2 {
+    color: #b65364;
     margin-bottom: 15px;
 }
 
-h3 {
-    color: #91445f;
-    font-family: Georgia, serif;
-    font-size: 21px;
-    margin: 12px 0;
-}
-
-main {
-    width: 90%;
-    max-width: 1100px;
-    margin: 40px auto;
-    text-align: center;
-}
-
-section {
-    margin-bottom: 40px;
-}
-
-p {
-    font-size: 18px;
+#introducao p {
+    font-size: 17px;
     line-height: 1.6;
 }
 
-#introducao {
-    background-color: #ffffff;
-    padding: 40px 30px;
-    border-radius: 12px;
-    border: 2px solid #e5b1c1;
-    box-shadow: 0 4px 10px rgba(150, 80, 100, 0.12);
-}
+/* BOLOS */
 
-#requisitos {
-    background-color: #ffeaf1;
-    padding: 30px;
-    border-radius: 12px;
-}
-
-#requisitos ul {
-    max-width: 600px;
-    margin: 20px auto 0;
-    text-align: left;
-}
-
-#requisitos li {
-    background-color: #ffffff;
-    margin: 10px 0;
-    padding: 13px 18px;
-    border-left: 5px solid #d889a3;
-    border-radius: 8px;
-    list-style-position: inside;
-}
-
-#bolos {
+#servicos {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 25px;
+    padding: 20px 0;
 }
 
-#bolos h2 {
+#servicos h2 {
     width: 100%;
+    text-align: center;
+    color: #b65364;
+    margin-bottom: 10px;
 }
 
-#bolos article {
-    width: 30%;
-    min-width: 280px;
-    background-color: #ffffff;
+.card {
+    background-color: white;
+    width: 300px;
     padding: 15px;
-    border-radius: 12px;
-    border: 2px solid #e5b1c1;
-    box-shadow: 0 4px 10px rgba(150, 80, 100, 0.12);
-    transition: 0.3s;
-}
-
-#bolos article:hover {
-    transform: translateY(-6px);
-    border-color: #d889a3;
-}
-
-#bolos article img {
-    width: 100%;
-    height: 250px;
-    object-fit: contain;
-    display: block;
+    text-align: center;
     border-radius: 10px;
-    background-color: #fff8f5;
+    box-shadow: 0 2px 8px #0000001a;
 }
 
-#precos {
-    background-color: #ffffff;
-    padding: 30px;
-    border-radius: 12px;
-    border: 2px solid #e5b1c1;
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.card h3 {
+    margin: 15px 0 10px;
+    color: #8f3d4a;
+}
+
+.card p {
+    color: #b65364;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* TABELA DE PREÇOS */
+
+#tabela {
+    margin: 40px auto;
+    max-width: 600px;
+}
+
+#tabela h2 {
+    text-align: center;
+    color: #b65364;
+    margin-bottom: 20px;
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 20px;
+    background-color: white;
+}
+
+th, td {
+    border: 1px solid #e8a0a8;
+    padding: 12px;
+    text-align: center;
 }
 
 th {
-    background-color: #d889a3;
-    color: #ffffff;
-    padding: 15px;
-    font-size: 18px;
+    background-color: #e8a0a8;
+    color: white;
 }
 
-td {
-    background-color: #fff8f5;
-    padding: 15px;
-    border: 1px solid #e5c3cd;
-    font-size: 16px;
-}
-
-tr:hover td {
-    background-color: #ffe3eb;
-}
+/* RODAPÉ */
 
 footer {
-    background-color: #f8c8d8;
+    background-color: #e8a0a8;
+    color: white;
     text-align: center;
-    padding: 25px;
-    border-top: 4px solid #d889a3;
+    padding: 20px;
+    margin-top: 30px;
 }
 
-footer p {
-    color: #75404f;
-    font-size: 16px;
-}
+/* CELULAR */
 
 @media (max-width: 700px) {
-
-    nav a {
-        display: block;
-        margin: 10px 0;
+    header {
+        flex-direction: column;
     }
 
-    h1 {
-        font-size: 32px;
+    #menu ul {
+        justify-content: center;
+        flex-wrap: wrap;
     }
 
-    h2 {
+    #container h1 {
         font-size: 26px;
     }
 
-    main {
-        width: 95%;
-    }
-
-    #bolos article {
-        width: 90%;
-    }
-
-    #bolos article img {
-        height: 200px;
-    }
-
-    table {
-        font-size: 14px;
-    }
-
-    th,
-    td {
-        padding: 10px;
+    .card {
+        width: 100%;
+        max-width: 350px;
     }
 }
